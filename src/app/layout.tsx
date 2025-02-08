@@ -14,7 +14,7 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
+  title: "Debangi Portfolio",
   description: "Created with the help of Frontend Tribe",
 };
 
