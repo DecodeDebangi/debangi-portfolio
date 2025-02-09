@@ -1,10 +1,15 @@
 import memojiImage from "@/assets/images/memoji-me.png";
 import Image from "next/image";
 import ArrowDown from "@/assets/icons/arrow-down.svg";
+import grainImage from "@/assets/images/grain.jpg";
 
 export const HeroSection = () => {
   return (
-    <div className='py-32 md:py-48 lg:py-60'>
+    <div className='py-32 md:py-48 lg:py-60 relative z-0'>
+      <div
+        className='absolute inset-0 -z-30 opacity-5'
+        style={{ backgroundImage: `url(${grainImage.src})` }}></div>
+      <div className='absolute inset-0 size-[620px] border-2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full border-emerald-300/5 shadow-[0_0_80px_inset] shadow-emerald-300/5'></div>
       <div className='container'>
         <div className='flex flex-col items-center'>
           <Image
@@ -37,7 +42,7 @@ export const HeroSection = () => {
           </button>
           <button className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl'>
             <span>✅</span>
-            <span className='font-semibold'>Connect</span>
+            <span className='font-semibold '>Connect</span>
           </button>
         </div>
       </div>
