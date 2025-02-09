@@ -4,6 +4,7 @@ import ArrowDown from "@/assets/icons/arrow-down.svg";
 import grainImage from "@/assets/images/grain.jpg";
 import StarIcon from "@/assets/icons/star.svg";
 import { HeroOrbit } from "@/components/HeroOrbit";
+import SparkleIcon from "@/assets/icons/sparkle.svg";
 
 export const HeroSection = () => {
   return (
@@ -25,6 +26,18 @@ export const HeroSection = () => {
       </HeroOrbit>
       <HeroOrbit size={590} rotation={98}>
         <StarIcon className='size-8 text-emerald-300' />
+      </HeroOrbit>
+      <HeroOrbit size={430} rotation={-15}>
+        <SparkleIcon className='size-8 text-emerald-300/20' />
+      </HeroOrbit>
+      <HeroOrbit size={440} rotation={79}>
+        <SparkleIcon className='size-5 text-emerald-300/20' />
+      </HeroOrbit>
+      <HeroOrbit size={530} rotation={178}>
+        <SparkleIcon className='size-10 text-emerald-300/20' />
+      </HeroOrbit>
+      <HeroOrbit size={710} rotation={144}>
+        <SparkleIcon className='size-14 text-emerald-300/20' />
       </HeroOrbit>
 
       <div className='container'>
