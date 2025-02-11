@@ -1,5 +1,4 @@
 import { Card } from "@/components/Card";
-import StarIcon from "@/assets/icons/star.svg";
 import { SectionHeader } from "@/components/SectionHeader";
 import bookImage from "@/assets/images/book-cover.png";
 import Image from "next/image";
@@ -8,7 +7,6 @@ import HTMLIcon from "@/assets/icons/html5.svg";
 import CSSIcon from "@/assets/icons/css3.svg";
 import GithubIcon from "@/assets/icons/github.svg";
 import ReactIcon from "@/assets/icons/react.svg";
-import { TechIcon } from "@/components/TechIcon";
 import MapImage from "@/assets/images/map.png";
 import memojiImage from "@/assets/images/memoji-me.png";
 import { CardHeader } from "@/components/CardHeader";
