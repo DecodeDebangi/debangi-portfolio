@@ -102,7 +102,7 @@ export const AboutSection = () => {
                 title='My Reads'
                 description='Explore the books shaping my perspective'
               />
-              <div className='w-40 mx-auto mt-2'>
+              <div className='w-40 mx-auto mt-2 md:mt-0'>
                 <Image src={bookImage} alt='Book Cover' />
               </div>
             </Card>
@@ -121,7 +121,7 @@ export const AboutSection = () => {
               />
             </Card>
           </div>
-          <div className='md:grid md:grid-cols-5 md:gap-8'>
+          <div className='grid grid-cols-1 gap-8 md:grid-cols-5'>
             <Card className='h-[320px] p-0 flex flex-col col-span-3'>
               <CardHeader
                 title='Beyond the Code'
