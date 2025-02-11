@@ -6,6 +6,7 @@ import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 import Image from "next/image";
 import { SectionHeader } from "@/components/SectionHeader";
 import grainImage from "@/assets/images/grain.jpg";
+import { Card } from "@/components/Card";
 
 const testimonials = [
   {
@@ -52,19 +53,12 @@ export const TestimonialsSection = () => {
         />
         <div>
           {testimonials.map((testimonial, index) => (
-            <div
-              key={index}
-              className='bg-gray-800 rounded-3xl p-6 relative overflow-hidden z-0'>
-              <div
-                className='absolute inset-0 opacity-5 -z-10'
-                style={{
-                  backgroundImage: `url(${grainImage.src})`,
-                }}></div>
+            <Card key={index}>
               <Image src={testimonial.avatar} alt={testimonial.name} />
               <div>{testimonial.name}</div>
               <div>{testimonial.position}</div>
               <div>{testimonial.text}</div>
-            </div>
+            </Card>
           ))}
         </div>
       </div>
