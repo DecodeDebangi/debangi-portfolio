@@ -12,6 +12,7 @@ import { TechIcon } from "@/components/TechIcon";
 import MapImage from "@/assets/images/map.png";
 import memojiImage from "@/assets/images/memoji-me.png";
 import { CardHeader } from "@/components/CardHeader";
+import { ToolboxItems } from "@/components/ToolboxItems";
 
 const toolboxItems = [
   {
@@ -84,7 +85,7 @@ export const AboutSection = () => {
           title='A Glimpse Into My World'
           description='Learn more about who I am, what I do, and what inspires me.'
         />
-        <div className='mt-20'>
+        <div className='mt-20 flex flex-col gap-8'>
           <Card className='h-[320px]'>
             <CardHeader
               title='My Reads'
@@ -94,30 +95,25 @@ export const AboutSection = () => {
               <Image src={bookImage} alt='Book Cover' />
             </div>
           </Card>
-          <Card>
-            <div>
-              <StarIcon />
-              <h3>My Toolbox</h3>
-              <p>
-                Explore the technologies and tools I use to craft exceptional
-                digital experiences.
-              </p>
-            </div>
-            <div>
-              {toolboxItems.map((item) => (
-                <div key={item.title}>
-                  <TechIcon component={item.iconType} />
-                  <span>{item.title}</span>
-                </div>
-              ))}
-            </div>
+          <Card className='h-[320px] p-0'>
+            <CardHeader
+              title='My Toolbox'
+              description='Explore the technologies and tools I use to craft exceptional
+                digital experiences.'
+              className='px-6 pt-6'
+            />
+            <ToolboxItems items={toolboxItems} className='mt-6' />
+            <ToolboxItems
+              items={toolboxItems}
+              className='mt-6 '
+              itemsWrapperClassName='-translate-x-1/2'
+            />
           </Card>
           <Card>
-            <div>
-              <StarIcon />
-              <h3>Beyond the Code</h3>
-              <p>Explore my interests and hobbies beyond the digital realm</p>
-            </div>
+            <CardHeader
+              title='Beyond the Code'
+              description='Explore my interests and hobbies beyond the digital realm'
+            />
             <div>
               {hobbies.map((item) => (
                 <div key={item.title}>
