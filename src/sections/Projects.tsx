@@ -49,7 +49,7 @@ const portfolioProjects = [
 
 export const ProjectsSection = () => {
   return (
-    <section className='pb-16 lg:py-24'>
+    <section id='projects' className='pb-16 lg:py-24'>
       <div className='container'>
         <SectionHeader
           eyebrow='Real-world Results'
@@ -64,7 +64,7 @@ export const ProjectsSection = () => {
               style={{ top: `calc(64px + ${projectIndex * 200}px)` }}>
               <div className='lg:grid lg:grid-cols-2 lg:gap-16'>
                 <div className='lg:pb-16'>
-                  <div className='bg-gradient-to-r from-emerald-300 to-sky-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text'>
+                  <div className='bg-gradient-to-r from-violet-300 to-cyan-400 inline-flex gap-2 font-bold uppercase tracking-widest text-sm text-transparent bg-clip-text'>
                     <span>{project.company}</span>
                     <span>&bull;</span>
                     <span>{project.year}</span>

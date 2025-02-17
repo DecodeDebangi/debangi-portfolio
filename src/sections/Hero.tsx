@@ -5,13 +5,14 @@ import grainImage from "@/assets/images/grain.jpg";
 import StarIcon from "@/assets/icons/star.svg";
 import { HeroOrbit } from "@/components/HeroOrbit";
 import SparkleIcon from "@/assets/icons/sparkle.svg";
+import Link from "next/link";
 
 export const HeroSection = () => {
   return (
     <div className='py-32 md:py-48 lg:py-60 relative z-0 overflow-x-clip'>
       <div
         className='absolute inset-0 
-  [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)]'>
+  [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)] -z-10'>
         <div
           className='absolute inset-0 -z-30 opacity-5'
           style={{ backgroundImage: `url(${grainImage.src})` }}></div>
@@ -27,7 +28,7 @@ export const HeroSection = () => {
           orbitDuration='30s'
           shouldSpin
           spinDuration='6s'>
-          <SparkleIcon className='size-8 text-emerald-300/20' />
+          <SparkleIcon className='size-8 text-violet-300/20' />
         </HeroOrbit>
         <HeroOrbit
           size={440}
@@ -36,7 +37,7 @@ export const HeroSection = () => {
           orbitDuration='32s'
           shouldSpin
           spinDuration='6s'>
-          <SparkleIcon className='size-5 text-emerald-300/20' />
+          <SparkleIcon className='size-5 text-violet-300/20' />
         </HeroOrbit>
         <HeroOrbit
           size={520}
@@ -45,7 +46,7 @@ export const HeroSection = () => {
           orbitDuration='34s'
           shouldSpin
           spinDuration='6s'>
-          <div className='size-2 rounded-full bg-emerald-300/20' />
+          <div className='size-2 rounded-full bg-violet-300/20' />
         </HeroOrbit>
         <HeroOrbit
           size={530}
@@ -54,7 +55,7 @@ export const HeroSection = () => {
           orbitDuration='36s'
           shouldSpin
           spinDuration='6s'>
-          <SparkleIcon className='size-10 text-emerald-300/20' />
+          <SparkleIcon className='size-10 text-violet-300/20' />
         </HeroOrbit>
         <HeroOrbit
           size={550}
@@ -63,7 +64,7 @@ export const HeroSection = () => {
           orbitDuration='38s'
           shouldSpin
           spinDuration='6s'>
-          <StarIcon className='size-12 text-emerald-300' />
+          <StarIcon className='size-12 text-violet-300' />
         </HeroOrbit>
         <HeroOrbit
           size={590}
@@ -72,7 +73,7 @@ export const HeroSection = () => {
           orbitDuration='40s'
           shouldSpin
           spinDuration='6s'>
-          <StarIcon className='size-8 text-emerald-300' />
+          <StarIcon className='size-8 text-violet-300' />
         </HeroOrbit>
         <HeroOrbit
           size={650}
@@ -81,7 +82,7 @@ export const HeroSection = () => {
           orbitDuration='42s'
           shouldSpin
           spinDuration='6s'>
-          <div className='size-2 rounded-full bg-emerald-300/20' />
+          <div className='size-2 rounded-full bg-violet-300/20' />
         </HeroOrbit>
         <HeroOrbit
           size={710}
@@ -90,7 +91,7 @@ export const HeroSection = () => {
           orbitDuration='44s'
           shouldSpin
           spinDuration='6s'>
-          <SparkleIcon className='size-14 text-emerald-300/20' />
+          <SparkleIcon className='size-14 text-violet-300/20' />
         </HeroOrbit>
         <HeroOrbit
           size={720}
@@ -99,7 +100,7 @@ export const HeroSection = () => {
           orbitDuration='46s'
           shouldSpin
           spinDuration='6s'>
-          <div className='size-3 rounded-full bg-emerald-300/20' />
+          <div className='size-3 rounded-full bg-violet-300/20' />
         </HeroOrbit>
         <HeroOrbit
           size={800}
@@ -108,7 +109,7 @@ export const HeroSection = () => {
           orbitDuration='48s'
           shouldSpin
           spinDuration='6s'>
-          <StarIcon className='size-28 text-emerald-300' />
+          <StarIcon className='size-28 text-violet-300' />
         </HeroOrbit>
       </div>
       <div className='container'>
@@ -131,18 +132,20 @@ export const HeroSection = () => {
             Web3 + Full Stack + DevOps Engineer
           </h1>
           <p className='mt-4 text-center text-white/60 md:text-lg'>
-            A passionate Web3 Frontend Developer specializing in creating
-            intuitive and engaging decentralized applications. With expertise in
-            React, TypeScript, and blockchain technologies, I transform complex
-            web3 concepts into seamless user experiences.
+            A passionate Full Stack and web3 Developer specializing in creating
+            intuitive and engaging web applications. With expertise in React,
+            TypeScript, and blockchain technologies, I transform complex web
+            concepts into seamless user experiences.
           </p>
         </div>
 
         <div className='flex flex-col md:flex-row justify-center items-center mt-8 gap-4'>
-          <button className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl'>
-            <span className='font-semibold'>Explore Projects</span>
-            <ArrowDown className='size-4' />
-          </button>
+          <Link href='#projects'>
+            <button className='inline-flex items-center gap-2 border border-white/15 px-6 h-12 rounded-xl'>
+              <span className='font-semibold'>Explore Projects</span>
+              <ArrowDown className='size-4' />
+            </button>
+          </Link>
           <button className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl'>
             <span>✅</span>
             <span className='font-semibold '>Connect</span>
