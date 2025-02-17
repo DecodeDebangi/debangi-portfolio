@@ -1,21 +1,22 @@
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
+import Link from "next/link";
 
 const footerLinks = [
   {
     title: "Instagram",
-    href: "",
+    href: "https://www.instagram.com/decodedebangi/",
   },
   {
     title: "Twitter",
-    href: "#",
+    href: "https://x.com/decodeDebangi",
   },
   {
     title: "LinkedIn",
-    href: "#",
+    href: "https://www.linkedin.com/in/debangic/",
   },
   {
-    title: "YouTube",
-    href: "#",
+    title: "Github",
+    href: "https://github.com/DecodeDebangi",
   },
 ];
 
@@ -27,14 +28,15 @@ export const Footer = () => {
         <div className='border-t border-white/15 py-6 text-sm flex flex-col md:flex-row md:justify-between items-center gap-8'>
           <div className='text-white/40'>&copy; 2025. All rights reserved.</div>
           <nav className='flex flex-col md:flex-row items-center gap-8'>
-            {footerLinks.map((link) => (
-              <a
-                key={link.title}
+            {footerLinks.map((link, i) => (
+              <Link
+                key={i}
                 href={link.href}
+                target='_blank'
                 className='inline-flex items-center gap-1.5'>
                 <span className='font-semibold'>{link.title}</span>
                 <ArrowUpRightIcon className='size-4' />
-              </a>
+              </Link>
             ))}
           </nav>
         </div>

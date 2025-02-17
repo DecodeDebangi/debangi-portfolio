@@ -128,8 +128,12 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className='max-w-lg mx-auto'>
-          <h1 className='font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide'>
-            Web3 + Full Stack + DevOps Engineer
+          <h1 className='font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide display-inline-flex'>
+            Full Stack
+            <StarIcon className='size-14 text-cyan-300/80 inline-flex' />
+            Web3
+            <StarIcon className='size-14 text-cyan-300/80 inline-flex' /> DevOps
+            Engineer
           </h1>
           <p className='mt-4 text-center text-white/60 md:text-lg'>
             A passionate Full Stack and web3 Developer specializing in creating
@@ -146,10 +150,12 @@ export const HeroSection = () => {
               <ArrowDown className='size-4' />
             </button>
           </Link>
-          <button className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl'>
-            <span>✅</span>
-            <span className='font-semibold '>Connect</span>
-          </button>
+          <Link href='https://www.instagram.com/decodedebangi/' target='_blank'>
+            <button className='inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl'>
+              <span>✅</span>
+              <span className='font-semibold '>Connect</span>
+            </button>
+          </Link>
         </div>
       </div>
     </div>
