@@ -128,7 +128,7 @@ export const HeroSection = () => {
         </div>
         <div className='max-w-lg mx-auto'>
           <h1 className='font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide'>
-            Web3 + Frontend + DevOps Engineer
+            Web3 + Full Stack + DevOps Engineer
           </h1>
           <p className='mt-4 text-center text-white/60 md:text-lg'>
             A passionate Web3 Frontend Developer specializing in creating
