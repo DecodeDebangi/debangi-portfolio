@@ -4,7 +4,11 @@ import { SectionHeader } from "@/components/SectionHeader";
 import bookImage from "@/assets/images/book-cover.png";
 import Image from "next/image";
 import JavacriptIcon from "@/assets/icons/square-js.svg";
+import SolidityIcon from "@/assets/icons/solidity.svg";
+import RustIcon from "@/assets/icons/rust.svg";
 import HTMLIcon from "@/assets/icons/html5.svg";
+import FigmaIcon from "@/assets/icons/figma.svg";
+import NextJsIcon from "@/assets/icons/nextjs.svg";
 import CSSIcon from "@/assets/icons/css3.svg";
 import GithubIcon from "@/assets/icons/github.svg";
 import ReactIcon from "@/assets/icons/react.svg";
@@ -30,19 +34,19 @@ const toolboxItems = [
   },
   {
     title: "Solidity",
-    iconType: JavacriptIcon,
+    iconType: SolidityIcon,
   },
   {
     title: "Rust",
-    iconType: JavacriptIcon,
+    iconType: RustIcon,
   },
   {
     title: "Figma",
-    iconType: JavacriptIcon,
+    iconType: FigmaIcon,
   },
   {
     title: "Next.js",
-    iconType: JavacriptIcon,
+    iconType: NextJsIcon,
   },
   {
     title: "ReactJS",
